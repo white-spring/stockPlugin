@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>org.white.stock</id>
+    <name>股票实施查看</name>
+    <vendor email="baisuper2@gmail.com">White Spring</vendor>
+
+    <description>IDEA查看股票插件，在IDEA中查看股票信息，可以配置股票代码，在idea中添加一个股票窗口</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="white.hello" class="white.stock.Hello" text="DemoHelloWord">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
